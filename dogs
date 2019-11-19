@@ -1,0 +1,109 @@
+import java.util.Scanner; //use java library (15)
+public class Dog {
+ public String Hair = "";
+ public int Tall = 0; 
+ public int Weight = 0;
+ 
+ public static void main(String[] args) { //multiple classes (12)
+	 
+	Scanner input = new Scanner(System.in); //use of scanner (1)
+	
+	 String dogs[] = { "Retriever", "Chihuahua", "Toy Poodle", "pug", "yorkie"  }; //use of array (11)
+      
+	 
+	 System.out.println("The Dogs we can test are " + dogs[0] + " " + dogs[1] + " " +
+     		  dogs[2] + " " + dogs[3] + " " + dogs[4]); //make a println (16)
+	  
+       System.out.println("Is your dogs hair long or short?");
+       
+	    String Hair = input.next(); // use of variables (2)
+	      
+	      System.out.println("How tall is your dog?(inches)");
+	     int Tall = input.nextInt(); //use of variables (2)
+	      
+	       System.out.println("How much does your do weight? (pounds[round up])"); 
+	      int Weight = input.nextInt();  //use of assignment operator (6) 
+	      
+	       System.out.println("I believe your dog is a: " + "");
+	       
+	      hairyhair(Hair);
+	      printdogs(Tall, Weight);
+}
+
+public static void hairyhair(String Hair) {
+	   
+ switch ( Hair) {
+	     case "Long" :  System.out.println("Retriever"); break; 
+	     case "Short" :  break; 
+	     case "long" : System.out.println("Retriever"); break;
+	     case "short" : break;
+	     //use of switch statement (4)
+	     }
+	
+}
+public static void  printdogs(int Tall, int Weight) { //use of method (9) and (10)
+	Scanner input = new Scanner(System.in);
+
+ if (Tall >= 19) { // use of conditional operator (5)
+	 System.out.println("Retriever");
+
+ }else if ( Tall >= 11 ) {
+	  System.out.println("pug");
+	  
+}else if ( Tall >= 10 ) {
+	 System.out.println("Poodle");
+	 
+	 } else if ( Tall >= 8) { 
+	 System.out.println("Yorkie");
+	 
+}else {
+	  System.out.println("Chihuahua"); }  
+  
+                       if (Weight >= 50) {
+	                         System.out.println("Retriever");
+	 
+                       } else if ( Weight >= 18) {
+	                        System.out.println("pug");
+	                        
+	                        }else if (Weight >= 8) {
+	                          System.out.println("Poodle");
+	 
+                       } else if ( Weight >= 7) {
+	                          System.out.println("Yorkie");
+	                          
+                        }else if (Weight >= 5) {
+	                          System.out.println( "Chihuahua");}
+                       
+                       
+	                          
+System.out.println("Thank you for Guessing your dog!! you are the number " 
+                  + (int)( Math.random()*10)  + " person to use this");   //use of math class method (7)
+
+    System.out.println("how old is your dog?");
+                int age = input.nextInt();
+                int r = (age * 7);
+                
+                System.out.println("your dog in people years is " + r +" years old!!");
+             
+               System.out.println("Would you like to learn facts about dogs? if so pick a number between 1-5");
+              
+                int E = 3 + 4; //use of constant (3) and arithmetical operator (6) 
+                
+             
+                
+            	do {     //use of loops (8) 
+            	        
+            	                    int facts = input.nextInt(); 
+            	                            switch (facts) {
+            	                            case 1: System.out.println("The oldest living dog was 30 years old!"); break;
+            	                            case 2: System.out.println("45% of dogs sleep in bed with their owners"); break;
+            	                            case 3: System.out.println("dogs are as smart as two year olds"); break;
+            	                            case 4: System.out.println("dogs can run up to 20 miles per hour"); break;
+            	                            case 5: System.out.println("dogs can smell their owners from 11 miles away"); break;
+            	                            
+            	                            }
+            	             }while (E != 6); //use of logical operator (6)
+                 System.out.println("bye!");
+                
+                }
+}
