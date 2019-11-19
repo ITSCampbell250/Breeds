@@ -80,36 +80,30 @@ public static void  printdogs(int Tall, int Weight) { //use of method (9) and (1
 System.out.println("Thank you for Guessing your dog!! you are the number " 
                   + (int)( Math.random()*10)  + " person to use this");   //use of math class method (7)
 
-    System.out.println("how old is your dog?");
-                int age = input.nextInt();
-                int r = (age * 7);
+    int r = (age * 7); //arithmetical operator (6)
                 
                 System.out.println("your dog in people years is " + r +" years old!!");
-             
-               
-              
-                int E = 3 + 4;
-                //use of constant (3) and arithmetical operator (6) 
                 
-             
+               
+                int E = 9;
+                //use of constant (3)     
                 
             	do {    
             		//use of loops (8) 
-            	        System.out.println("Would you like to learn facts about dogs? if so pick a number between 1-5");
+            	        System.out.println("Would you like to learn facts about dogs? if so pick a number between 1-5 if no type 0");
             	                    int facts = input.nextInt(); 
             	                            switch (facts) {
+            	                            case 0: System.out.println("bye"); break;
             	                            case 1: System.out.println("The oldest living dog was 30 years old!"); break;
             	                            case 2: System.out.println("45% of dogs sleep in bed with their owners"); break;
             	                            case 3: System.out.println("dogs are as smart as two year olds"); break;
             	                            case 4: System.out.println("dogs can run up to 20 miles per hour"); break;
             	                            case 5: System.out.println("dogs can smell their owners from 11 miles away"); break;
             	                            //five facts about dogs
-            	                            }
+            	                            } 
             	             }while (E != 6);
             	//use of logical operator (6)
             	//keeps it looping 
                  System.out.println("bye!");
-                
                 }
-}
-	
+                }
