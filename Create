@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Create {
+
+	public static void main(String[] args) { //use of multiple classes (12)
+		Scanner input = new Scanner(System.in); 
+		Dog Retriever = new Dog(); //make a constructor (14)
+		
+		Retriever.Hair = input.next(); //create objects (13)
+		Retriever.Tall = input.nextInt();
+		Retriever.Weight = input.nextInt();
+		
+		Dog Chihuahua = new Dog(); 
+		
+		Chihuahua.Hair = input.next(); 
+		Chihuahua.Tall = input.nextInt();
+		Chihuahua.Weight = input.nextInt();
+		
+		Dog Poodle = new Dog(); 
+		
+		Poodle.Hair = input.next(); 
+		Poodle.Tall = input.nextInt();
+		Poodle.Weight = input.nextInt();
+		
+		Dog Pug = new Dog();
+		
+		Pug.Hair = input.next(); 
+		Pug.Tall = input.nextInt();
+		Pug.Weight = input.nextInt();
+		
+		
+		Dog Yorkie = new Dog();
+		
+		Yorkie.Hair = input.next(); 
+		Yorkie.Tall = input.nextInt();
+		Yorkie.Weight = input.nextInt();
+	}
+}
