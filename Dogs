@@ -78,7 +78,7 @@ public static void  printdogs(int Tall, int Weight) { //use of method (9) and (1
                        
 	                          
 System.out.println("Thank you for Guessing your dog!! you are the number " 
-                  + (int)( Math.random()*10)  + " person to use this");   //use of math class method (7)
+                  + (int)( (Math.random()*10) + 2)  + " person to use this");   //use of math class method (7)
 
     int r = (age * 7); //arithmetical operator (6)
                 
