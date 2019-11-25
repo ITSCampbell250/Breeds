@@ -15,14 +15,14 @@ public class Dog {
 	 System.out.println("The Dogs we can test are " + dogs[0] + " " + dogs[1] + " " +
      		  dogs[2] + " " + dogs[3] + " " + dogs[4]); //make a println (16)
 	  //this uses the array to print the dog names 
-       System.out.println("Is your dogs hair long or short?");
+       System.out.println("Is your dog's hair long or short?");
        
 	    String Hair = input.next(); // use of variables (2)
 	      
-	      System.out.println("How tall is your dog?(inches)");
+	      System.out.println("How tall is your dog? (inches)");
 	     int Tall = input.nextInt(); //use of variables (2)
 	      
-	       System.out.println("How much does your do weight? (pounds[round up])"); 
+	       System.out.println("How much does your dog weigh? (pounds)"); 
 	      int Weight = input.nextInt();  //use of assignment operator (6) 
 	      
 	       System.out.println("I believe your dog is a: " + "");
@@ -82,7 +82,7 @@ System.out.println("Thank you for Guessing your dog!! you are the number "
 
     int r = (age * 7); //arithmetical operator (6)
                 
-                System.out.println("your dog in people years is " + r +" years old!!");
+                System.out.println("Your dog in is " + r +" in people years!!");
                 
                
                 int E = 9;
@@ -90,7 +90,7 @@ System.out.println("Thank you for Guessing your dog!! you are the number "
                 
             	do {    
             		//use of loops (8) 
-            	        System.out.println("Would you like to learn facts about dogs? if so pick a number between 1-5 if no type 0");
+            	        System.out.println("Would you like to learn facts about dogs? if so pick a number between 1-5");
             	                    int facts = input.nextInt(); 
             	                            switch (facts) {
             	                            case 0: System.out.println("bye"); break;
